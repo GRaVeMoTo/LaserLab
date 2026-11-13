@@ -25,3 +25,28 @@ Blueprint, built through the running editor over MCP (`unreal-mcp`, `127.0.0.1:8
 - [x] **4. Laser trace**: on Test, the route is computed cell by cell (a mirror turns the beam 90 degrees, a block or a wall stops it) and the beam is drawn for a few seconds.
 - [x] **5. Win**: if all items are placed and the beam reaches the endpoint, show "Level complete"; Restart button.
 - [x] **6. Manual playthrough** in the editor, checked with a screenshot.
+
+# Plan: MVP
+
+## MVP scope
+
+From the design doc: the rules, level generation and levels 1–3, with the items empty block, block item, mirror item and not movable mirror item.
+
+## Decision: mirror types
+
+The game has both one-sided and two-sided mirrors.
+
+- **One-sided mirror**: 4 types, one for each orientation. The front side deflects the beam by 90 degrees, the back side stops it like a block.
+- **Two-sided mirror**: 2 types, one for each diagonal. Both sides deflect the beam by 90 degrees.
+
+The demo only has two-sided behaviour: its 4 mirror states act as 2 pairs (NE = SW, NW = SE). The MVP splits these into 4 one-sided states and 2 two-sided states.
+
+## Steps
+
+- [ ] **1. Mirror types**: extend the cell state with 4 one-sided and 2 two-sided mirrors, update the laser trace (back side of a one-sided mirror stops the beam) and give the two kinds a visibly different shape.
+- [ ] **2. Level data and generator**: a level (table size, entry point, endpoint, blocks, queue) is generated from a seed instead of the hardcoded values. The generator only outputs solvable levels, and the same seed always gives the same level.
+- [ ] **3. Missing items**: block item on the table and not movable mirror item.
+- [ ] **4. Levels 2 and 3, level flow**: level 2 adds blocking blocks, level 3 has a bigger table; after a win the next level starts.
+- [ ] **5. Rules**: undo (3 per level), pick-up ability (0–3 per round), test press counter, countdown timer, lose conditions (timer runs out, no more possible moves). Replace the 3D buttons and labels with a screen UI first, because the counters and the timer need it.
+- [ ] **6. Scoring and level result screen**: remaining seconds as base score, minus 5 per test press, plus 10 per unused pick-up ability, minus 15 per used undo.
+- [ ] **7. Playthrough of levels 1–3** in the editor, checked with screenshots.

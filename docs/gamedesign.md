@@ -8,7 +8,10 @@ one laser entry point on left and one endpoint on right side.
     mirrors:
         fixed direction by default, the player can not rotate them.
         deflect the laser beam by 90 deg by default.
-        4 types, one for each orientation.
+        one-sided mirror: 4 types, one for each orientation.
+            the front side deflects the beam, the back side stops it like a block.
+        two-sided mirror: 2 types, one for each diagonal.
+            both sides deflect the beam.
     placing:
         a placed item can not be picked up again.
         exception: pick-up ability, removes one placed item from the table.
@@ -45,7 +48,7 @@ one laser entry point on left and one endpoint on right side.
 *items*
     empty block.
     block item: block laser beam.
-    mirror item: change laser direction to 90 deg.
+    mirror item: change laser direction to 90 deg, one-sided or two-sided.
     not movable mirror item.
 
 *items for later levels*
