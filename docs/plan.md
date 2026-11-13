@@ -43,7 +43,7 @@ The demo only has two-sided behaviour: its 4 mirror states act as 2 pairs (NE = 
 
 ## Steps
 
-- [ ] **1. Mirror types**: extend the cell state with 4 one-sided and 2 two-sided mirrors, update the laser trace (back side of a one-sided mirror stops the beam) and give the two kinds a visibly different shape.
+- [x] **1. Mirror types**: extend the cell state with 4 one-sided and 2 two-sided mirrors, update the laser trace (back side of a one-sided mirror stops the beam) and give the two kinds a visibly different shape.
 - [ ] **2. Level data and generator**: a level (table size, entry point, endpoint, blocks, queue) is generated from a seed instead of the hardcoded values. The generator only outputs solvable levels, and the same seed always gives the same level.
 - [ ] **3. Missing items**: block item on the table and not movable mirror item.
 - [ ] **4. Levels 2 and 3, level flow**: level 2 adds blocking blocks, level 3 has a bigger table; after a win the next level starts.
