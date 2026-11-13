@@ -50,3 +50,36 @@ The demo only has two-sided behaviour: its 4 mirror states act as 2 pairs (NE = 
 - [x] **5. Rules**: undo (3 per level), pick-up ability (0–3 per round), test press counter, countdown timer, lose conditions (timer runs out, no more possible moves). Replace the 3D buttons and labels with a screen UI first, because the counters and the timer need it.
 - [x] **6. Scoring and level result screen**: remaining seconds as base score, minus 5 per test press, plus 10 per unused pick-up ability, minus 15 per used undo.
 - [ ] **7. Playthrough of levels 1–3** in the editor, checked with screenshots.
+
+# Plan: jam submission
+
+Deadline: November 15, 2026. Requirements are in `submit.md`.
+
+## Scope
+
+A packaged Windows build on itch.io with sounds and a basic look. Left out: items for later levels, level select, saved progress, tutorial, hint system.
+
+## Steps
+
+- [ ] **1. First package**: Windows development build, started outside the editor, levels 1–3 playable. Done first, so packaging problems show up early.
+- [ ] **2. Sounds**: placing an item, laser hum on test, reaching the endpoint.
+- [ ] **3. Look**: models and materials for the table, walls, mirrors, blocks, entry point and endpoint, in place of the simple cubes.
+- [ ] **4. Laser effects**: bloom on the beam, particles where the beam hits something.
+- [ ] **5. End of level animation** before the level result screen.
+- [ ] **6. Final package**: rebuild, play through levels 1–3 in the build, zip as `TeamName_GameName`, under 1 GB.
+- [ ] **7. Gameplay video**: 30–60 seconds, uploaded, link ready.
+- [ ] **8. itch.io page and submission**: upload the zip to the own itch.io account and submit to the jam with the team name, each member's name and Epic Games account email, the game name, the video link and the list of tools used (needed for partner prizes).
+
+# Plan: timed run
+
+Design change: the game is a timed run. The player sets a start seed and a time limit, and finishes as many levels as possible before the time runs out.
+
+## Steps
+
+- [x] **1. Run setup screen**: start seed (1–999) and time limit (1–30 minutes, default 5) on a panel before the start; the Start button begins the run.
+- [x] **2. Run timer**: one countdown through the whole run instead of a timer per level; when it runs out, the run ends.
+- [x] **3. Level series**: level seed derived from the start seed and the level number; the table starts at 3x5 and grows every two levels (5x7, 5x9, 7x11), with more blocks on later levels; no last level.
+- [x] **4. Tests and win**: automatic test when the last item is placed (not counted); a successful test finishes the level even with items left in the queue; the next level starts after a short pause.
+- [x] **5. Undo cost**: each undo takes 5 seconds off the timer.
+- [x] **6. Stuck level and run result**: a stuck level shows a restart message instead of ending the game; the run result screen shows seed, time limit, tests, undos and finished levels, with a New run button.
+- [ ] **7. Manual playthrough with the mouse**: seed and time fields, Start and New run buttons clicked by hand.
