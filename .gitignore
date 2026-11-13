@@ -81,3 +81,6 @@ Content/Collections/
 Content/Developers/
 Content/__ExternalActors__/
 Content/__ExternalObjects__/
+
+# Jam partner offers with redeem codes, kept local
+docs/resource.txt
