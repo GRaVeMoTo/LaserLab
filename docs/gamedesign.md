@@ -8,7 +8,8 @@ one laser entry point on left and one endpoint on right side.
 *run*
     setup before the start:
         start seed: a number from 1 to 999.
-        time limit: for example 5 minutes.
+        time limit: 1 to 60 minutes, 5 by default.
+        both can be set with a slider or typed as a number.
     one countdown timer runs through the whole run, it does not reset between levels.
     the levels of a run are generated from the start seed, the same seed gives the same series of levels.
     the first level has a 3 rows x 5 columns table, later levels grow by the difficulty curve.
@@ -95,6 +96,12 @@ one laser entry point on left and one endpoint on right side.
 
 *feedback and style*
     visual style: can change level by level, neon, sci-fi or lab.
+    colors: dark lab look, only the laser and the important items glow.
+        background near-black navy #0B1020, panels and table dark slate #1A2338, text off-white #E6EDF7.
+        cyan #22D3EE for the interface: buttons, sliders, highlighted cell.
+        red #FF2D2D only for the laser beam.
+        amber #FBBF24 entry point, green #34D399 endpoint.
+        mirrors cold silver #C8D3E0, no glow; one-sided and two-sided mirrors differ by shape.
     laser look: bloom, particles where the beam hits something.
     sounds: placing an item, laser hum on test, reaching the endpoint.
     end of level: short animation, then the next level.

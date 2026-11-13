@@ -76,7 +76,7 @@ Design change: the game is a timed run. The player sets a start seed and a time 
 
 ## Steps
 
-- [x] **1. Run setup screen**: start seed (1–999) and time limit (1–30 minutes, default 5) on a panel before the start; the Start button begins the run.
+- [x] **1. Run setup screen**: start seed (1–999) and time limit (1–60 minutes, default 5) on a panel before the start, each with a slider and a number field that can be typed into; the Start button begins the run.
 - [x] **2. Run timer**: one countdown through the whole run instead of a timer per level; when it runs out, the run ends.
 - [x] **3. Level series**: level seed derived from the start seed and the level number; the table starts at 3x5 and grows every two levels (5x7, 5x9, 7x11), with more blocks on later levels; no last level.
 - [x] **4. Tests and win**: automatic test when the last item is placed (not counted); a successful test finishes the level even with items left in the queue; the next level starts after a short pause.
