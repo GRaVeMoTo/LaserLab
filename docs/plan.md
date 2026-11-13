@@ -45,8 +45,8 @@ The demo only has two-sided behaviour: its 4 mirror states act as 2 pairs (NE = 
 
 - [x] **1. Mirror types**: extend the cell state with 4 one-sided and 2 two-sided mirrors, update the laser trace (back side of a one-sided mirror stops the beam) and give the two kinds a visibly different shape.
 - [x] **2. Level data and generator**: a level (table size, entry point, endpoint, blocks, queue) is generated from a seed instead of the hardcoded values. The generator only outputs solvable levels, and the same seed always gives the same level.
-- [ ] **3. Missing items**: block item on the table and not movable mirror item.
-- [ ] **4. Levels 2 and 3, level flow**: level 2 adds blocking blocks, level 3 has a bigger table; after a win the next level starts.
+- [x] **3. Missing items**: block item on the table and not movable mirror item.
+- [x] **4. Levels 2 and 3, level flow**: level 2 adds blocking blocks, level 3 has a bigger table; after a win the next level starts.
 - [ ] **5. Rules**: undo (3 per level), pick-up ability (0–3 per round), test press counter, countdown timer, lose conditions (timer runs out, no more possible moves). Replace the 3D buttons and labels with a screen UI first, because the counters and the timer need it.
 - [ ] **6. Scoring and level result screen**: remaining seconds as base score, minus 5 per test press, plus 10 per unused pick-up ability, minus 15 per used undo.
 - [ ] **7. Playthrough of levels 1–3** in the editor, checked with screenshots.
