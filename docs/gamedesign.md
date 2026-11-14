@@ -116,7 +116,10 @@ one laser entry point on left and one endpoint on right side.
     countdown: shown in 3D as mm:ss on the five middle cubes of the far wall, one character per cube.
     laser look: bloom, particles where the beam hits something.
     sounds: placing an item, laser hum on test, reaching the endpoint.
-    end of level: short animation, then the next level.
+    end of level: a 5 second animation, then the next level.
+        the beam turns green, after a second the items shrink and sink into the floor.
+        the countdown timer stops during the animation.
+    start of level: the blocks and fixed items rise out of the floor.
     end of run: the run result screen.
 
 *progression*

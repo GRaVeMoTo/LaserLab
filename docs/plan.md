@@ -65,7 +65,7 @@ A packaged Windows build on itch.io with sounds and a basic look. Left out: item
 - [x] **2. Sounds**: placing an item, laser hum on test, reaching the endpoint; menu music on the setup screen, two tracks that take turns during the run.
 - [x] **3. Look**: models and materials for the table, walls, mirrors, blocks, entry point and endpoint, in place of the simple cubes.
 - [x] **4. Laser effects**: bloom on the beam, particles where the beam hits something.
-- [ ] **5. End of level animation** before the level result screen.
+- [x] **5. End of level animation** before the level result screen.
 - [ ] **6. Final package**: rebuild, play through levels 1–3 in the build, zip as `TeamName_GameName`, under 1 GB.
 - [ ] **7. Gameplay video**: 30–60 seconds, uploaded, link ready.
 - [ ] **8. itch.io page and submission**: upload the zip to the own itch.io account and submit to the jam with the team name, each member's name and Epic Games account email, the game name, the video link and the list of tools used (needed for partner prizes).
