@@ -53,6 +53,10 @@ one laser entry point on left and one endpoint on right side.
     run result:
         the number of levels finished before the countdown timer runs out.
         shown at the end of the run with the start seed, the time limit, the test button presses and the used undos.
+    quit menu:
+        Esc opens a "Quit the game?" dialog with Yes and No, at any time.
+        while it is open the countdown timer stops and the table takes no input.
+        Yes quits the game; No or Esc again closes the dialog and the run continues.
 
 *items*
     empty block.
