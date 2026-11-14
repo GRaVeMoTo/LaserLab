@@ -64,7 +64,7 @@ A packaged Windows build on itch.io with sounds and a basic look. Left out: item
 - [ ] **1. First package**: Windows development build, started outside the editor, levels 1–3 playable. Done first, so packaging problems show up early.
 - [x] **2. Sounds**: placing an item, laser hum on test, reaching the endpoint; menu music on the setup screen, two tracks that take turns during the run.
 - [x] **3. Look**: models and materials for the table, walls, mirrors, blocks, entry point and endpoint, in place of the simple cubes.
-- [ ] **4. Laser effects**: bloom on the beam, particles where the beam hits something.
+- [x] **4. Laser effects**: bloom on the beam, particles where the beam hits something.
 - [ ] **5. End of level animation** before the level result screen.
 - [ ] **6. Final package**: rebuild, play through levels 1–3 in the build, zip as `TeamName_GameName`, under 1 GB.
 - [ ] **7. Gameplay video**: 30–60 seconds, uploaded, link ready.
