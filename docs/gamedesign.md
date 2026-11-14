@@ -72,9 +72,9 @@ one laser entry point on left and one endpoint on right side.
 
 *levels*
     items queue on right side of the table
-    1. level clean 3x5 table, random different entry and target block, use 2 mirror item
-    2. level same as before, just add blocking block on table.
-    3. increase table size on level.
+    1. level 3x5 table with a few blocking blocks, random different entry and target block, use 2 mirror item
+    2. level same as before, with one more blocking block.
+    3. increase table size on level, two mirrors are already fixed on the table.
     later levels: keep growing by the difficulty curve until the time runs out.
 
 *level generation*
@@ -83,6 +83,13 @@ one laser entry point on left and one endpoint on right side.
         the same seed always gives the same level, so a level can be replayed and shared.
     solvability:
         the generator can only output solvable levels.
+    variety:
+        the mirrors of a level are a random mix of one-sided and two-sided mirrors.
+        the mirrors in the queue are never all the same kind, at least two kinds are present.
+        the entry row and the exit row are both different from the rows of the previous level.
+    blocking blocks:
+        about one sixth of the cells, plus one more with every level, at most one third of the cells.
+        blocks never stand on the route of the solution.
     difficulty curve, what grows level by level:
         table size.
         number of blocking blocks.
