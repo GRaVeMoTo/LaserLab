@@ -102,6 +102,12 @@ one laser entry point on left and one endpoint on right side.
 *controls and camera*
     input: mouse.
     actions: place the top item of the queue, use pick-up ability, undo, restart, test.
+    buttons on the table, close to where the player looks:
+        test: a lemon yellow box, half a cube tall, with a red mushroom push button, on the far right corner of the table.
+        restart (circle with an X), undo (circular arrow) and pick-up (tweezers): industrial push buttons left of the table, lemon yellow caps with black icons.
+        a button lights up under the cursor and stays down while the mouse button is held; it acts on release, only if the cursor is still on it.
+        the pick-up button stays lit while the pick-up is armed.
+        keys T, R, U and P do the same.
     camera: tilted 3D view, with limited camera movement up-down and sideways.
     the grid cell under the cursor is highlighted before placing.
 
