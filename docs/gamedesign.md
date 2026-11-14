@@ -140,7 +140,9 @@ one laser entry point on left and one endpoint on right side.
     laser look: bloom, particles where the beam hits something.
     sounds: placing an item, laser hum on test, reaching the endpoint.
     end of level: a 5 second animation, then the next level.
-        the beam turns green, after a second the items shrink and sink into the floor.
+        the beam turns green and switches off after a second.
+        the floor tiles that carry an item sink with their items by one and a half item heights.
+        when they are down, the items shrink away, then the empty floor tiles rise back.
         the countdown timer stops during the animation.
     start of level: the blocks and fixed items rise out of the floor; a restart shows the table at once, without the animation.
     end of run: the run result screen.
