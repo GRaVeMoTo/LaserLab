@@ -62,6 +62,12 @@ one laser entry point on left and one endpoint on right side.
         Esc opens a "Quit the game?" dialog with Yes and No, at any time.
         while it is open the countdown timer stops and the table takes no input.
         Yes quits the game; No or Esc again closes the dialog and the run continues.
+        the dialog also has two sliders, music volume and effects volume, each 0 to 100%, 100% by default.
+        the volumes take effect while dragging and last until the game is closed.
+    help panel:
+        F1 opens a help panel with the rules and the keys, on the setup screen and during a run.
+        while it is open the countdown timer stops and the table takes no input.
+        any key or mouse button closes it and the run continues; that key press does nothing else.
 
 *items*
     empty block.
@@ -117,7 +123,7 @@ one laser entry point on left and one endpoint on right side.
         three lamps beside the undo button and three beside the pick-up button: a lit lamp for each one left.
             undo lamps light from the top, pick-up lamps from the bottom.
         when no undo or pick-up is left, its button turns dark and can not be pressed.
-        keys T, R, U and P do the same.
+        keys T, R, U and P do the same; F1 opens the help panel.
     camera: tilted 3D view, with limited camera movement up-down and sideways.
     the grid cell under the cursor is highlighted before placing.
 
