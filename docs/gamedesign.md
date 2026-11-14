@@ -27,7 +27,9 @@ one laser entry point on left and one endpoint on right side.
     placing:
         a placed item can not be picked up again.
         exception: pick-up ability, removes one placed item from the table.
-        the player has only 0-3 pick-up abilities per round.
+        a run starts with 1 pick-up ability; every 10 finished levels give one more, at most 3.
+        pressing pick-up arms it: the lamp of the pick-up that would be used blinks until an item is picked up.
+        pressing it again disarms it and the pick-up stays available.
     item queue:
         only the top item of the queue can be placed.
         not all items have to be placed, a successful test finishes the level.
@@ -39,10 +41,13 @@ one laser entry point on left and one endpoint on right side.
         test button presses are counted, automatic tests are not.
         failed test: the level continues.
     undo and restart:
-        undo button: takes back the last move, 3 undos per level.
+        undo button: takes back the last move.
+        a run starts with 3 undos; every new level gives one back, at most 3.
+        an undo stops a laser beam that is on at once.
         each undo takes 5 seconds off the countdown timer.
         undo is separate from the pick-up ability, both are available.
         restart button: restarts the level, the countdown timer keeps running.
+        a restart does not give back undos or pick-ups.
     win condition:
         a test where the laser beam reaches the endpoint, even if not all items are placed.
         with colored lasers: every endpoint must be reached by a beam of its own color.
@@ -107,6 +112,9 @@ one laser entry point on left and one endpoint on right side.
         restart (circle with an X), undo (circular arrow) and pick-up (tweezers): industrial push buttons left of the table, lemon yellow caps with black icons.
         a button lights up under the cursor and stays down while the mouse button is held; it acts on release, only if the cursor is still on it.
         the pick-up button stays lit while the pick-up is armed.
+        three lamps beside the undo button and three beside the pick-up button: a lit lamp for each one left.
+            undo lamps light from the top, pick-up lamps from the bottom.
+        when no undo or pick-up is left, its button turns dark and can not be pressed.
         keys T, R, U and P do the same.
     camera: tilted 3D view, with limited camera movement up-down and sideways.
     the grid cell under the cursor is highlighted before placing.
