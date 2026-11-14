@@ -80,10 +80,12 @@ one laser entry point on left and one endpoint on right side.
     bomb / forbidden field: if the beam hits it, the level is lost immediately and the whole level must be restarted.
 
 *levels*
-    items queue on right side of the table
+    items queue on right side of the table, on a conveyor belt joined to the right wall by two pipes.
+        the belt comes out of a yellow-black striped tunnel with hanging rubber strips; only the next two items are out of the tunnel.
     1. level 3x5 table with a few blocking blocks, random different entry and target block, use 2 mirror item
     2. level same as before, with one more blocking block.
-    3. increase table size on level, two mirrors are already fixed on the table.
+    3. the route has four turns; 0, 1 or 2 of its mirrors are already fixed on the table (at most half), the rest are in the queue.
+    the table grows every 3 levels by one row or one column, whichever keeps it closer to 16:9 (3x5, 3x6, 4x6, 4x7, 4x8, 5x8, 5x9, ...).
     later levels: keep growing by the difficulty curve until the time runs out.
 
 *level generation*
