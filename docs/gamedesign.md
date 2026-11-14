@@ -125,7 +125,7 @@ one laser entry point on left and one endpoint on right side.
     end of level: a 5 second animation, then the next level.
         the beam turns green, after a second the items shrink and sink into the floor.
         the countdown timer stops during the animation.
-    start of level: the blocks and fixed items rise out of the floor.
+    start of level: the blocks and fixed items rise out of the floor; a restart shows the table at once, without the animation.
     end of run: the run result screen.
 
 *progression*
