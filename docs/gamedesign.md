@@ -129,6 +129,7 @@ one laser entry point on left and one endpoint on right side.
         red #FF2D2D only for the laser beam.
         amber #FBBF24 entry point, green #34D399 endpoint.
         mirrors cold silver #C8D3E0, no glow; one-sided and two-sided mirrors differ by shape.
+        the back of a one-sided mirror is dark and carries a yellow laser warning triangle.
     countdown: shown in 3D as mm:ss on the five middle cubes of the far wall, one character per cube.
     laser look: bloom, particles where the beam hits something.
     sounds: placing an item, laser hum on test, reaching the endpoint.
